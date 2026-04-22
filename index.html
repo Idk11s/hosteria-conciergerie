@@ -3,23 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hosteria Conciergerie — Gestion Airbnb Belvès, Périgord Noir</title>
-    <meta name="description" content="Conciergerie professionnelle Airbnb & Booking à Belvès. Gestion complète de votre location saisonnière en Périgord Noir. Estimation gratuite — 06 20 46 98 46">
+    <title>Hosteria Conciergerie — Prestige Airbnb Belvès</title>
+    <meta name="description" content="Conciergerie d'exception à Belvès. Gestion complète 20% HT. Votre patrimoine mérite l'excellence au cœur du Périgord Noir.">
     
-    <!-- Fonts -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap');
     </style>
     
     <link rel="stylesheet" href="style.css">
 
-    <!-- SEO JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Hosteria Conciergerie",
-      "image": "https://images.unsplash.com/photo-1505910147557-3026c1e19310?q=80&w=1000",
       "telephone": "06 20 46 98 46",
       "email": "hosteria.conciergerie24@gmail.com",
       "address": {
@@ -28,8 +25,7 @@
         "addressRegion": "Dordogne",
         "addressCountry": "FR"
       },
-      "areaServed": ["Belvès", "Siorac-en-Périgord", "Monpazier", "Pays de Belvès", "Dordogne"],
-      "priceRange": "$$"
+      "priceRange": "20%"
     }
     </script>
 </head>
@@ -38,21 +34,34 @@
     <header class="header header--transparent js-header">
         <div class="container header__inner">
             <div class="header__logo">
-                <svg width="45" height="45" viewBox="0 0 100 100" class="logo-svg">
-                    <circle cx="50" cy="50" r="45" fill="none" stroke="#c8961e" stroke-width="1.5"/>
-                    <path d="M50 30 L50 70 M35 50 L65 50" stroke="#c8961e" stroke-width="1.5"/>
+                <svg width="60" height="60" viewBox="0 0 120 120" class="logo-svg">
+                    <defs>
+                        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#c8961e;" />
+                            <stop offset="100%" style="stop-color:#b8882a;" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Couronne de laurier simplifiée mais élégante -->
+                    <path d="M60 15 C35 15 15 35 15 60 C15 85 35 105 60 105 C85 105 105 85 105 60 C105 35 85 15 60 15" fill="none" stroke="url(#goldGrad)" stroke-width="1" stroke-dasharray="2 2"/>
+                    <path d="M30 60 Q30 30 60 30 Q90 30 90 60 Q90 90 60 90 Q30 90 30 60" fill="none" stroke="url(#goldGrad)" stroke-width="0.5" opacity="0.5"/>
+                    <!-- Clé ornementale -->
+                    <path d="M60 35 A8 8 0 1 1 60 51 A8 8 0 1 1 60 35 M60 51 L60 85 M55 75 L65 75 M55 80 L65 80" stroke="url(#goldGrad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                    <circle cx="60" cy="43" r="3" fill="url(#goldGrad)"/>
                 </svg>
-                <h1 class="header__title">HOSTERIA<span class="header__subtitle">CONCIERGERIE</span></h1>
+                <div class="header__brand">
+                    <span class="header__brand-main">HOSTERIA</span>
+                    <span class="header__brand-sub">CONCIERGERIE</span>
+                </div>
             </div>
             <nav class="header__nav">
                 <ul class="header__menu">
                     <li><a href="#accueil" class="header__link">Accueil</a></li>
                     <li><a href="#services" class="header__link">Services</a></li>
-                    <li><a href="#pourquoi" class="header__link">Expertise</a></li>
-                    <li><a href="#tarifs" class="header__link">Tarif</a></li>
+                    <li><a href="#tarifs" class="header__link">Tarif Unique</a></li>
+                    <li><a href="#estimation" class="header__link">Estimation</a></li>
                 </ul>
             </nav>
-            <a href="#estimation" class="btn btn--gold">Estimation</a>
+            <a href="#estimation" class="btn btn--gold">Contact</a>
         </div>
     </header>
 
@@ -60,11 +69,12 @@
         <section id="accueil" class="hero">
             <div class="hero__overlay"></div>
             <div class="container hero__content js-reveal">
-                <h2 class="hero__headline">Votre patrimoine mérite l'excellence.</h2>
-                <p class="hero__subheadline">Conciergerie de luxe Airbnb & Booking — Belvès & Périgord Noir</p>
+                <span class="hero__tagline">Périgord Noir • Belvès</span>
+                <h2 class="hero__headline">L'art de recevoir,<br>la sérénité en plus.</h2>
+                <p class="hero__subheadline">Conciergerie haut de gamme pour propriétaires exigeants.</p>
                 <div class="hero__actions">
-                    <a href="#estimation" class="btn btn--gold">Estimation gratuite</a>
-                    <a href="#services" class="btn btn--outline-light">Nos services</a>
+                    <a href="#estimation" class="btn btn--gold">Estimer mes revenus</a>
+                    <a href="#services" class="btn btn--outline-light">Notre expertise</a>
                 </div>
             </div>
         </section>
@@ -73,127 +83,84 @@
             <div class="container stats__grid">
                 <div class="stats__item">
                     <span class="stats__number">20%</span>
-                    <span class="stats__label">Commission unique</span>
+                    <span class="stats__label">Gestion intégrale</span>
                 </div>
-                <div class="stats__sep">◆</div>
                 <div class="stats__item">
                     <span class="stats__number">+23k</span>
-                    <span class="stats__label">Visiteurs/an à Belvès</span>
+                    <span class="stats__label">Touristes / an</span>
                 </div>
-                <div class="stats__sep">◆</div>
                 <div class="stats__item">
-                    <span class="stats__number">24h</span>
-                    <span class="stats__label">Réactivité maximale</span>
+                    <span class="stats__number">5★</span>
+                    <span class="stats__label">Standard qualité</span>
                 </div>
             </div>
         </section>
 
         <section id="services" class="section services">
             <div class="container">
-                <header class="section__header">
-                    <h2 class="section__title">Une Gestion Complète</h2>
-                    <div class="diamond-sep">◆</div>
-                </header>
+                <div class="section__header">
+                    <h2 class="section__title">Services d'Exception</h2>
+                    <p class="section__subtitle">Une prise en charge totale de votre bien, 7j/7.</p>
+                </div>
                 <div class="services__grid">
                     <article class="service-card js-reveal">
-                        <div class="service-card__icon">📅</div>
-                        <h3 class="service-card__title">Réservations 7j/7</h3>
-                        <p class="service-card__text">Gestion intégrale des calendriers et échanges voyageurs avec une courtoisie irréprochable.</p>
-                    </article>
-                    <article class="service-card js-reveal">
                         <div class="service-card__icon">🔑</div>
-                        <h3 class="service-card__title">Accueil Personnalisé</h3>
-                        <p class="service-card__text">Check-in soigné, présentation du bien et remise des clés pour une expérience premium.</p>
+                        <h3 class="service-card__title">Accueil & Clés</h3>
+                        <p>Remise en main propre et présentation chaleureuse du territoire.</p>
                     </article>
                     <article class="service-card js-reveal">
                         <div class="service-card__icon">✨</div>
-                        <h3 class="service-card__title">Ménage de Standing</h3>
-                        <p class="service-card__text">Nettoyage professionnel rigoureux et gestion du linge de qualité hôtelière.</p>
+                        <h3 class="service-card__title">Ménage Hôtelier</h3>
+                        <p>Exigence maximale et blanchisserie professionnelle pour chaque séjour.</p>
                     </article>
                     <article class="service-card js-reveal">
-                        <div class="service-card__icon">📈</div>
-                        <h3 class="service-card__title">Optimisation d'Annonce</h3>
-                        <p class="service-card__text">Photos professionnelles et rédaction stratégique pour maximiser votre visibilité.</p>
-                    </article>
-                    <article class="service-card js-reveal">
-                        <div class="service-card__icon">💰</div>
-                        <h3 class="service-card__title">Tarification Dynamique</h3>
-                        <p class="service-card__text">Optimisation quotidienne de vos revenus selon le marché et les événements locaux.</p>
-                    </article>
-                    <article class="service-card js-reveal">
-                        <div class="service-card__icon">📊</div>
-                        <h3 class="service-card__title">Transparence Totale</h3>
-                        <p class="service-card__text">Comptes rendus mensuels détaillés et versement direct de vos revenus.</p>
+                        <div class="service-card__icon">📸</div>
+                        <h3 class="service-card__title">Mise en valeur</h3>
+                        <p>Optimisation du référencement et shooting pour booster vos réservations.</p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section id="pourquoi" class="section why-us bg-white">
-            <div class="container why-us__inner">
-                <div class="why-us__content js-reveal">
-                    <h2 class="section__title section__title--left">L'Expertise Locale</h2>
-                    <p class="section__intro">Ancrée à Belvès, <strong>Hosteria Conciergerie</strong> incarne la seule gestion de proximité dédiée au Pays de Belvès.</p>
-                    <p>Nous privilégions la qualité à la quantité. Pas de plateforme anonyme, mais un interlocuteur unique pour une gestion sur-mesure de votre bien.</p>
-                    <ul class="why-us__list">
-                        <li><span class="diamond">◆</span> Présence physique réelle</li>
-                        <li><span class="diamond">◆</span> Relation de confiance</li>
-                        <li><span class="diamond">◆</span> Réseau local de maintenance</li>
-                        <li><span class="diamond">◆</span> Sans engagement</li>
-                    </ul>
-                </div>
-                <div class="why-us__visual js-reveal">
-                    <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?q=80&w=800" alt="Belvès Périgord">
-                </div>
-            </div>
-        </section>
-
-        <section id="tarifs" class="section pricing">
+        <section id="tarifs" class="section pricing bg-navy">
             <div class="container">
-                <header class="section__header">
-                    <h2 class="section__title">Tarif Unique</h2>
-                    <div class="diamond-sep">◆</div>
-                </header>
-                <div class="pricing__single">
-                    <div class="price-card price-card--single js-reveal">
-                        <h3 class="price-card__name">Formule Sérénité</h3>
-                        <div class="price-card__amount">20%<span class="price-card__tax">HT</span></div>
-                        <p class="price-card__desc">Gestion complète de A à Z. Nous nous occupons de tout, vous profitez de vos revenus.</p>
-                        <ul class="price-card__features">
-                            <li>Diffusion multi-plateformes (Airbnb, Booking...)</li>
-                            <li>Optimisation des prix en temps réel</li>
-                            <li>Accueil et assistance voyageurs 7j/7</li>
-                            <li>Ménage et blanchisserie professionnelle</li>
-                            <li>Maintenance et suivi technique</li>
-                            <li>Compte-rendu financier mensuel</li>
+                <div class="pricing__single js-reveal">
+                    <div class="price-card--premium">
+                        <span class="price-card__tag">Formule Unique</span>
+                        <h2 class="price-card__title">Sérénité Totale</h2>
+                        <div class="price-card__price">20%<span class="price-card__unit">HT</span></div>
+                        <p class="price-card__description">Une commission simple, tout inclus, sans aucun frais caché.</p>
+                        <ul class="price-card__list">
+                            <li>Gestion des calendriers multi-plateformes</li>
+                            <li>Communication voyageurs illimitée</li>
+                            <li>Optimisation des tarifs (Yield Management)</li>
+                            <li>Coordination ménage et maintenance</li>
+                            <li>Assistance 24h/24 pour les voyageurs</li>
                         </ul>
-                        <a href="#estimation" class="btn btn--gold">Demander mon estimation</a>
+                        <a href="#estimation" class="btn btn--gold">Activer ma gestion</a>
                     </div>
                 </div>
-                <p class="pricing__note">Les frais de ménage sont à la charge des voyageurs — Estimation gratuite et sans engagement.</p>
             </div>
         </section>
 
-        <section id="estimation" class="section estimation bg-white">
+        <section id="estimation" class="section estimation">
             <div class="container">
-                <div class="form-card js-reveal">
-                    <h2 class="section__title">Votre Estimation Gratuite</h2>
-                    <form id="contactForm" class="form">
-                        <div class="form__grid">
-                            <input type="text" class="form__input" placeholder="Nom complet" required>
-                            <input type="tel" class="form__input" placeholder="Téléphone" required>
-                            <input type="email" class="form__input" placeholder="Email" required>
-                            <input type="text" class="form__input" placeholder="Adresse du bien" required>
-                            <select class="form__select" required>
-                                <option value="" disabled selected>Type de bien</option>
-                                <option value="maison">Maison</option>
-                                <option value="appartement">Appartement</option>
-                                <option value="gite">Gîte / Domaine</option>
-                            </select>
-                            <input type="number" class="form__input" placeholder="Nombre de chambres" required>
-                            <textarea class="form__textarea form__group--full" placeholder="Détails complémentaires (optionnel)"></textarea>
+                <div class="form-container js-reveal">
+                    <div class="form-header">
+                        <h2 class="section__title">Obtenir une étude</h2>
+                        <p>Réponse personnalisée sous 24h, sans engagement.</p>
+                    </div>
+                    <form id="contactForm" class="modern-form">
+                        <div class="form-row">
+                            <input type="text" placeholder="Nom complet" required>
+                            <input type="email" placeholder="Email" required>
                         </div>
-                        <button type="submit" class="btn btn--gold btn--full">Recevoir mon étude personnalisée</button>
+                        <div class="form-row">
+                            <input type="tel" placeholder="Téléphone" required>
+                            <input type="text" placeholder="Adresse du bien" required>
+                        </div>
+                        <textarea placeholder="Parlez-nous de votre projet..."></textarea>
+                        <button type="submit" class="btn btn--gold btn--full">Envoyer ma demande</button>
                     </form>
                 </div>
             </div>
@@ -202,19 +169,13 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer__grid">
-                <div class="footer__brand">
-                    <div class="footer__logo">HOSTERIA</div>
-                    <p class="footer__slogan">L'hospitalité au cœur du Périgord</p>
-                </div>
-                <div class="footer__contact">
-                    <h4 class="footer__heading">Contact</h4>
-                    <p>06 20 46 98 46</p>
-                    <p>hosteria.conciergerie24@gmail.com</p>
-                </div>
+            <div class="footer__top">
+                <div class="footer__logo">HOSTERIA</div>
+                <p>Conciergerie Locale & Professionnelle en Périgord Noir</p>
             </div>
             <div class="footer__bottom">
-                <p>© 2025 Hosteria Conciergerie — Belvès, Dordogne | <a href="mentions.html">Mentions Légales</a></p>
+                <p>© 2025 Hosteria Conciergerie • Belvès • 06 20 46 98 46</p>
+                <a href="mentions.html">Mentions Légales</a>
             </div>
         </div>
     </footer>
